@@ -1,0 +1,35 @@
+body {
+	/*background-image: url('trivia3./png');*/*/
+	background-size: 100%;
+}
+
+#wrapper {
+	
+	font-size: 24px;
+}
+
+.header {
+	font-size: 64px;
+	margin-left: 75px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	
+
+}
+
+#counter {
+	font-size: 34px;
+}
+
+#body {
+	text-align: center;
+
+}
+
+/*input[type="radio"] {
+    margin-left:10px;
+}
+
+button[type="submit")] {
+	margin-left: 50px;
+}*/

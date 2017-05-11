@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container" id="wrapper">
+	<div class="header">Trivia Game</div>
+<!-- 
+		<header>
+			<h1>Trivia Game</h1>
+		</header>
+
+	</div>
+ -->
+	<div class="container" id="body">
+
+		<p><button type="submit" id="start">Start</button></p>
+
+		<div id="counter">Time Remaining: <span id="value"></span></div>
+
+		<form>
+		<h2>Question 1</h2>
+		  <input type="radio" name="gender" value="male" checked> Male 
+		  <input type="radio" name="gender" value="female"> Female 
+		  <input type="radio" name="gender" value="other"> Other  
+		</form>  
+
+		<h2>Question 2</h2>
+		  <input type="radio" name="" value="" checked> Male 
+		  <input type="radio" name="" value=""> Female 
+		  <input type="radio" name="" value=""> Other  	
+		</form>
+
+		<h2>Question 2</h2>
+		  <input type="radio" name="" value="" checked> Male 
+		  <input type="radio" name="" value=""> Female 
+		  <input type="radio" name="" value=""> Other  	
+		</form> 
+		<p>
+
+		<p><button type="submit" id="done">Done</button></p>
+
+	</div>
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+<script type="text/javascript">
+
+
+// var number = 30;
+
+// var intervalId;
+
+
+//     //  The stop function
+//     function stop() {
+
+//       //  Clears our intervalId
+//       //  We just pass the name of the interval
+//       //  to the clearInterval function.
+//       clearInterval(intervalId);
+//     }
+
+
+// //  The run function sets an interval
+//     //  that runs the decrement function once a second.
+//     function run() {
+//       intervalId = setInterval(decrement, 1000);
+//     }
+
+//     //  The decrement function.
+//     function decrement() {
+
+//       //  Decrease number by one.
+//       number--;
+
+//       //  Show the number in the #show-number tag.
+//       $("#value").html("<h2>" + number + "</h2>");
+
+
+//       //  Once number hits zero...
+//       if (number === 0) {
+
+//         //  ...run the stop function.
+//         stop();
+
+//         //  Alert the user that time is up.
+//         alert("Time Up!");
+//       }
+//     }
+
+
+//     $("#done").on("click", function() {
+// 	countdownTimer = setInterval(number, 60);
+// 	run();
+// });
+
+// run();
+
+
+// create variables 
+
+	var intervalId = 0;
+
+	// store counter
+	var number = 30;
+
+	// store correct guesses
+	var correct = 0;
+
+	// store incorrect guesses
+	var incorrect = 0;
+
+	// store unanswered
+	var unanswered = 0;
+
+	// create correct answers 
+	var answers = ["Male", "Female", "Other", "huh?:"];
+
+// create counter functionality
+
+	// set coundown variable
+	var countdown = 0;
+
+	// decrease countdown value by 1 second
+
+	function run() {
+    	intervalId = setInterval(decrement, 1000);
+    }
+
+     //  The stop function
+    function stop() {
+     //  Clears our intervalId
+     //  We just pass the name of the interval
+     //  to the clearInterval function.
+      clearInterval(intervalId);
+    }
+
+    //  The decrement function.
+    function decrement() {
+
+      //  Decrease number by one.
+      number--;
+
+      //  Show the number in the #show-number tag.
+      $("#value").html("<h2>" + number + "</h2>");
+
+      if (number === 0) {
+        stop();
+      }
+    }
+
+    //  //  The stop function
+    // function stop() {
+
+    //  //  Clears our intervalId
+    //  //  We just pass the name of the interval
+    //  //  to the clearInterval function.
+    //   clearInterval(intervalId);
+    // }
+
+
+// create startGame function
+
+	// start counter upon clicking ready
+
+	// display counter to #value span
+
+	// once complete, run finished function
+
+
+// create function to determine correct answers and store results in an array
+
+	// for each question, choose if correct answer was made
+
+	// if correct, increase correct count by 1
+
+	// if else incorrect, increase incorrect count by 1
+
+	// else incomplete, increase incomplete count by 1
+
+	// display results to html
+
+
+
+
+// start button
+
+	// on click, initializes countdown function
+	$("#start").on("click", run);
+
+// done button
+	
+	// initializes stop
+	$("#done").on("click", stop);
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+	
+</body>
+</html>
