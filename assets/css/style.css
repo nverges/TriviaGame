@@ -1,31 +1,45 @@
+/*Fonts
+font-family: 'Raleway', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+*/
+
 body {
-	/*background-image: url('trivia3./png');*/*/
+	background-image: url('../images/blue.png');
 	background-size: 100%;
 }
 
 #wrapper {
 	background-color: #fff6d3;
 	font-size: 24px;
+	opacity: .9;
+	margin-top: 24px;
+	margin-bottom:;
 }
 
 .header {
-	font-size: 64px;
+	font-family: 'Shadows Into Light', sans-serif;
+	color: black;
+	font-size: 100px;
 	text-align: center;
 	margin-top: 60px;
-	margin-bottom: 40px;
-	
-
+	margin-bottom: 30px;
 }
 
-#counter {
-	font-size: 34px;
-}
 
 #body {
 	text-align: center;
-
 }
 
+.question {
+	font-weight: bold;
+	color: #000000;
+	font-family: 'Raleway', cursive;
+}
+
+.form {
+	font-size: 24px;
+}
 /*input[type="radio"] {
     margin-left:10px;
 }
