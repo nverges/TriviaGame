@@ -26,9 +26,9 @@
     	
     	$('input:radio[name=q1]').attr('checked',false);
     	$('input:radio[name=q2]').attr('checked',false);
-   		$('input:radio[name=q2]').attr('checked',false);
-        $('input:radio[name=q2]').attr('checked',false);
-     	$('input:radio[name=q2]').attr('checked',false);
+   		$('input:radio[name=q3]').attr('checked',false);
+        $('input:radio[name=q4]').attr('checked',false);
+     	$('input:radio[name=q5]').attr('checked',false);
     }
 
 	// starts game
