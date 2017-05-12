@@ -15,21 +15,20 @@
 
     // reset function restarts timer and resets buttons
     function reset() {
-    	$("#value").html("<h2>" + "Time Remaining: " + number + "</h2>");
-    	$("#score").html("");
-
-
-
     	number = 30;
     	correct = 0;
     	incorrect = 0;
     	unanswered = 5;
+
+    	$("#value").html("<h2>" + "Time Remaining: " + number + "</h2>");
+    	$("#score").html("");
+
     	
     	$('input:radio[name=q1]').attr('checked',false);
     	$('input:radio[name=q2]').attr('checked',false);
-    	// $('input:radio[name=q3]').attr('checked',true);
-    	// $('input:radio[name=q4]').attr('checked',true);
-
+   		$('input:radio[name=q2]').attr('checked',false);
+        $('input:radio[name=q2]').attr('checked',false);
+     	$('input:radio[name=q2]').attr('checked',false);
     }
 
 	// starts game
