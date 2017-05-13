@@ -14,7 +14,7 @@ body {
 	font-size: 24px;
 	opacity: .9;
 	margin-top: 50px;
-	margin-bottom:;
+	margin-bottom: 50px;
 }
 
 .header {
@@ -41,7 +41,7 @@ body {
 }
 
 input[type="radio"] {
-	transform:scale(1.5);
+	transform:scale(1.25);
 }
 /*input[type="radio"] {
     margin-left:10px;

@@ -6,7 +6,7 @@ var incorrect = 0;
 var unanswered = 5;
 var intervalId;
 
-var answers = ["92", "6 million", "Luke Skywalker", "Blue", "February 14", "Yellowstone", "Jupiter"];
+var answers = ["93", "6 million", "Luke Skywalker", "Blue", "February 14", "Yellowstone", "Jupiter"];
 // , "Other", "Other", "Other", "Other", "Other", "Other"
 
 
