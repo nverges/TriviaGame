@@ -88,7 +88,7 @@ $("#questions").hide();
 
 		// get stuck trying to figure out syntax
 
-		var 
+
 
 		// grabs value for each radio button
 		var answer1 = ($('input:radio[name=q1]:checked').val());
