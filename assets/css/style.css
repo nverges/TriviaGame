@@ -26,7 +26,6 @@ body {
 	margin-bottom: 30px;
 }
 
-
 #body {
 	text-align: center;
 }
@@ -39,6 +38,10 @@ body {
 
 .form {
 	font-size: 24px;
+}
+
+input[type="radio"] {
+	transform:scale(1.5);
 }
 /*input[type="radio"] {
     margin-left:10px;

@@ -1,12 +1,12 @@
 
-// create variables 
+// global variables 
 var number = 30;
 var correct = 0;
 var incorrect = 0;
 var unanswered = 5;
 var intervalId;
 
-var answers = ["92", "6 million", "Luke Skywalker", "Blue", "February 14"];
+var answers = ["92", "6 million", "Luke Skywalker", "Blue", "February 14", "Yellowstone", "Jupiter"];
 // , "Other", "Other", "Other", "Other", "Other", "Other"
 
 
@@ -84,14 +84,20 @@ $("#questions").hide();
 		var input = [];
 		var responses = [];
 
+		////////// WANT TO MAKE THIS INTO A FOR LOOP //////////////////////
+
+		// get stuck trying to figure out syntax
+
+		var 
+
 		// grabs value for each radio button
 		var answer1 = ($('input:radio[name=q1]:checked').val());
 		var answer2 = ($('input:radio[name=q2]:checked').val());
 	    var answer3 = ($('input:radio[name=q3]:checked').val());
 	   	var answer4 = ($('input:radio[name=q4]:checked').val());
 		var answer5 = ($('input:radio[name=q5]:checked').val());
-	 //    var answer6 = ($('input:radio[name=q6]:checked').val());
-	 //   	var answer7 = ($('input:radio[name=q7]:checked').val());
+	    var answer6 = ($('input:radio[name=q6]:checked').val());
+	   	var answer7 = ($('input:radio[name=q7]:checked').val());
 		// var answer8 = ($('input:radio[name=q8]:checked').val());
 	 //    var answer9 = ($('input:radio[name=q9]:checked').val());
 	 //    var answer10 = ($('input:radio[name=q10]:checked').val());
@@ -102,11 +108,13 @@ $("#questions").hide();
 	   	responses.push(answer3);
 	    responses.push(answer4);
 	    responses.push(answer5);
-	   	// responses.push(answer6);
-	   	// responses.push(answer7);
+	   	responses.push(answer6);
+	   	responses.push(answer7);
 	    // responses.push(answer8);
 	   	// responses.push(answer9);
 	    // responses.push(answer10);
+
+		////////// WANT TO MAKE THIS INTO A FOR LOOP //////////////////////  
 
 	    // compares answers with responses arrays and adjusts counters
 	    for (i=0; i < answers.length; i++) {
