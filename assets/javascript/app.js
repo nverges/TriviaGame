@@ -9,23 +9,25 @@ var intervalId;
 var answers = ["92", "6 million", "Luke Skywalker", "Blue", "February 14"];
 // , "Other", "Other", "Other", "Other", "Other", "Other"
 
+
+// hides questions until start button is clicked
 $("#questions").hide();
 
 
-    // reset function restarts timer and resets buttons
+// reset function restarts timer and resets radio buttons
     function reset() {
 
-    	// clears correct/incorrect answers and resets timer
+    	// clears correct/incorrect responses and resets timer
     	number = 30;
     	correct = 0;
     	incorrect = 0;
     	unanswered = 0;
 
-    	// clear html
+    	// clears html
     	$("#value").html("<h2>" + "Time Remaining: " + number + "</h2>");
     	$("#score").html("");
 
-    	// clear radio buttons
+    	// clears radio buttons
     	$('input:radio').attr('checked',false);
     }
 
@@ -82,32 +84,19 @@ $("#questions").hide();
 		var input = [];
 		var responses = [];
 
-
-
-		var answer1 = ($('input:radio:checked').val());
+		// grabs value for each radio button
+		var answer1 = ($('input:radio[name=q1]:checked').val());
 		var answer2 = ($('input:radio[name=q2]:checked').val());
 	    var answer3 = ($('input:radio[name=q3]:checked').val());
 	   	var answer4 = ($('input:radio[name=q4]:checked').val());
 		var answer5 = ($('input:radio[name=q5]:checked').val());
-	    var answer6 = ($('input:radio[name=q6]:checked').val());
-	   	var answer7 = ($('input:radio[name=q7]:checked').val());
-		var answer8 = ($('input:radio[name=q8]:checked').val());
-	    var answer9 = ($('input:radio[name=q9]:checked').val());
-	    var answer10 = ($('input:radio[name=q10]:checked').val());
-
-		// pulls values from each radio button
-	 //    var answer1 = ($('input:radio[name=q1]:checked').val());
-		// var answer2 = ($('input:radio[name=q2]:checked').val());
-	 //    var answer3 = ($('input:radio[name=q3]:checked').val());
-	 //   	var answer4 = ($('input:radio[name=q4]:checked').val());
-		// var answer5 = ($('input:radio[name=q5]:checked').val());
 	 //    var answer6 = ($('input:radio[name=q6]:checked').val());
 	 //   	var answer7 = ($('input:radio[name=q7]:checked').val());
 		// var answer8 = ($('input:radio[name=q8]:checked').val());
 	 //    var answer9 = ($('input:radio[name=q9]:checked').val());
 	 //    var answer10 = ($('input:radio[name=q10]:checked').val());
 
-	    // pushes radio button values into responses array
+	    // pushes radio button value into responses array
 	    responses.push(answer1);
 	    responses.push(answer2);
 	   	responses.push(answer3);
@@ -145,10 +134,7 @@ $("#questions").hide();
 	    // disable radio buttons
 	    // document.getElementById("input:radio").disabled = true; 
 
-	}
-	
-
-
+}
 
 // create startGame function
 
